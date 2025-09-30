@@ -1,0 +1,151 @@
+@import '../../assets/styles/mbr-additional.css';
+
+
+.mbr-fullscreen {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.mbr-background-video-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: 'block';
+  background-size: cover;
+  background-position: center center;
+  background-image: url("https://img.youtube.com/vi/Rmu4mu2V-GQ/maxresdefault.jpg");
+}
+
+.mbr-video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.mbr-video-foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.mbr-background-video {
+  margin-top: 0;
+  max-width: initial;
+  transition: opacity 1000ms;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+}
+
+.mbr-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0.5;
+  background-color: #000;
+}
+
+.container-fluid {
+  position: relative;
+  z-index: 3;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.content-wrap {
+  text-align: center;
+  color: #ffffff;
+}
+
+.mbr-white {
+  color: #ffffff;
+}
+.mbr-beige {
+  color: var(--beige-color)!important;
+  font-size: 5rem !important;
+}
+
+.display-1 {
+  font-size: 4.4rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.display-7 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.btn-white-outline {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-white-outline:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 3rem;
+  }
+
+  .display-7 {
+    font-size: 1rem;
+  }
+
+  .btn-white-outline {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .mbr-video-foreground {
+    height: 300% !important;
+    top: -100% !important;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .mbr-video-foreground {
+    width: 300% !important;
+    left: -100% !important;
+  }           
+}
