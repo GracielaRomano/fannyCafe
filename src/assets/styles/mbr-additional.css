@@ -1733,6 +1733,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .cid-uXQ7jkcR5W .grid-item img {
   min-width: 30vw;

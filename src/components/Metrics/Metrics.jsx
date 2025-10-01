@@ -25,10 +25,10 @@ const Metrics = () => {
             <div key={index} className="item features-without-image col-12 col-md-6 col-lg-4">
               <div className="item-wrapper">
                 <div className="card-box align-left">
-                  <p className="card-title mbr-fonts-style mb-3 display-1">
+                  <p className="card-title mbr-fonts-style mb-3 display-1 text-center">
                     <strong>{metric.number}</strong>
                   </p>
-                  <p className="card-text mb-3">{metric.text}</p>
+                  <p className="card-text mb-3 text-center">{metric.text}</p>
                 </div>
               </div>
             </div>

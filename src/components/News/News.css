@@ -1,2 +1,61 @@
-@import '../../assets/styles/style(1).css';
-@import '../../assets/styles/mbr-additional.css'
+.gallery07 {
+  padding: 2rem 0;
+  overflow: hidden;
+  background: #ffffff;
+  position: relative;
+}
+
+.gallery-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.grid-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 220px; /* Altura fija para evitar colapso */
+}
+
+.grid-container-3 {
+  display: flex;
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* Transición suave removida para movimiento continuo */
+}
+
+.grid-item {
+  flex: 0 0 290px; /* Ancho fijo para cada item */
+  padding: 0 1rem;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Efecto hover */
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    height: 170px;
+  }
+  
+  .grid-item {
+    flex: 0 0 250px;
+  }
+  
+  .grid-item img {
+    height: 150px;
+  }
+}

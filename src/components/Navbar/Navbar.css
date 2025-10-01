@@ -23,12 +23,13 @@
   margin-left: auto;
   max-width: 1000px;
   background-color:var(--light-color);
-  opacity: 0.5;
+  opacity: 0.7;
   display: flex;
   flex-wrap:inherit;
   justify-content: space-between;
   align-items: center;
   border-radius: 30px;
+  border: 1px solid var(--beige-color);
   margin-top: 10px;
   
 }
