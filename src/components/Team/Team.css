@@ -1,6 +1,8 @@
 .team {
   padding: 5rem 0;
   background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .section-title {
@@ -9,46 +11,95 @@
   margin-bottom: 3rem;
 }
 
-.item-wrapper {
+.team .item-wrapper {
   padding: 1rem;
   transition: all 0.3s ease;
+  position: relative;
+  height: auto;
+  min-height: 100%;
 }
 
-.item-wrapper:hover {
+.team .item-wrapper:hover {
   transform: translateY(-10px);
 }
 
-.item-img {
+.team .item-img {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
-.item-img img {
+.team .item-img img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   transition: transform 0.3s ease;
+  display: block;
 }
 
-.item-wrapper:hover .item-img img {
+.team .item-wrapper:hover .item-img img {
   transform: scale(1.05);
 }
 
-.item-content {
+.team .item-content {
   padding: 1rem 0;
+  text-align: left !important;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  min-height: 80px;
 }
 
-.item-title {
-  font-size: 1.5rem;
-  color: var(--dark-color);
-  margin-bottom: 0.5rem;
+/* Sobrescribir estilos globales con mayor especificidad */
+.cid-team-section .item-title,
+.team .item-title {
+  font-size: 2rem !important;
+  color: #343a40 !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 700 !important;
+  display: block !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+  position: relative !important;
+  z-index: 10 !important;
+  background-color: white !important;
+  padding: 0.5rem 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-.item-subtitle {
-  font-size: 1rem;
-  color: var(--primary-color);
-  font-weight: 500;
+.cid-team-section .item-subtitle,
+.team .item-subtitle {
+  font-size: 1.5rem !important;
+  color: black !important;
+  font-weight: 500 !important;
+  display: block !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+  position: relative !important;
+  z-index: 10 !important;
+  background-color: white !important;
+  padding: 0.5rem 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Asegurar que el strong dentro del título también sea visible */
+.team .item-title strong {
+  color: inherit !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Resetear cualquier transformación que pueda estar ocultando el texto */
+.team .item-title,
+.team .item-subtitle {
+  transform: none !important;
+  overflow: visible !important;
+  max-height: none !important;
+  height: auto !important;
 }
 
 @media (max-width: 768px) {
@@ -60,11 +111,11 @@
     font-size: 2rem;
   }
 
-  .item-img img {
+  .team .item-img img {
     height: 250px;
   }
 
-  .item-title {
-    font-size: 1.2rem;
+  .team .item-title {
+    font-size: 1.2rem !important;
   }
 }

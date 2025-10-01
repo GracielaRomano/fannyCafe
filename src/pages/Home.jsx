@@ -7,6 +7,7 @@ import Team from '../components/Team/Team';
 import Contact from '../components/Contact/Contact';
 import News from '../components/News/News';
 import Plans  from '../components/Plans/Plans';
+import Client from '../components/Client/Client';
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <News />
       <Plans />
       <Team />
+      <Client />
       <Contact />
     </div>
   );

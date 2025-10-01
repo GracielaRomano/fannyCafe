@@ -26,7 +26,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="team">
+    <section className="team cid-team-section">
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-12 content-head">
@@ -44,11 +44,11 @@ const Team = () => {
                 <div className="item-img mb-3">
                   <img src={member.image} alt={member.name} />
                 </div>
-                <div className="item-content align-left">
-                  <h5 className="item-title">
+                <div className="item-content">
+                  <h5 className="item-title" style={{ color: '#343a40', fontSize: '1.5rem', fontWeight: '700', marginBottom: '0.5rem' }}>
                     <strong>{member.name}</strong>
                   </h5>
-                  <h6 className="item-subtitle mb-3">{member.position}</h6>
+                  <h6 className="item-subtitle" style={{ color: '#007bff', fontSize: '1rem', fontWeight: '500' }}>{member.position}</h6>
                 </div>
               </div>
             </div>
