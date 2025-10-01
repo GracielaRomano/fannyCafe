@@ -1,0 +1,138 @@
+/* Estilos para el componente About */
+.article9 {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.article9 .card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0 !important;
+  margin: 0%;
+  border: none;
+}
+
+.article9 .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.article9 .card-content-text {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.article9 .card-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.article9 .card-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+.article9 .item {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.article9 .item-wrapper {
+  width: 100%;
+}
+
+.article9 .mbr-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #232323;
+  text-align: justify;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.article9 .image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.article9 .image-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.text-about {
+  padding: 0 !important;
+  width: 100% !important;
+  margin-top: 0 !important;
+}
+.container-about {
+    background-color: var(--light-beige-color) !important;
+}
+
+/* Utilidades */
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.display-2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.display-7 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .article9 {
+    padding: 3rem 0;
+  }
+
+  .article9 .card {
+    padding: 1.5rem;
+  }
+
+  .article9 .card-title {
+    font-size: 2rem;
+  }
+
+  .article9 .mbr-text {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .display-2 {
+    font-size: 2rem;
+  }
+
+  .display-7 {
+    font-size: 1rem;
+  }
+}
