@@ -13,7 +13,7 @@ const images =[
 const Client = () => {
   return (
     <div>
-        <section data-bs-version="5.1" className="clients04 cid-uXQ7jkd45t" id="partners-1-uXQ7jkd45t">
+        <section data-bs-version="5.1" className="clients cid-uXQ7jkd45t" id="partners-1-uXQ7jkd45t">
             <div className="container-fluid">
                 <div className="row justify-content-center mb-5">
                     <div className="col-12 content-head">
@@ -32,7 +32,7 @@ const Client = () => {
                         >
                             <div className="item-wrapper">
                                 <div className="item-img">
-                                    <img 
+                                    <img className='img-client' 
                                         src={image} 
                                         alt={`Socio Aliado ${index + 1}`} 
                                         title="" 

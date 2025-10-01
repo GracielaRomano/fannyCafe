@@ -1,0 +1,8 @@
+.img-client {
+  width:216px !important;
+  height: 144px !important;
+  object-fit: cover;
+}
+.clients {
+  padding:3rem 0;
+}

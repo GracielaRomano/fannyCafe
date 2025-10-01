@@ -8,6 +8,8 @@ import Contact from '../components/Contact/Contact';
 import News from '../components/News/News';
 import Plans  from '../components/Plans/Plans';
 import Client from '../components/Client/Client';
+import Video from '../components/Video/Video';
+import About from '../components/About/About';
 
 
 const Home = () => {
@@ -21,6 +23,8 @@ const Home = () => {
       <Plans />
       <Team />
       <Client />
+      <Video />
+      <About />
       <Contact />
     </div>
   );
