@@ -1,6 +1,6 @@
 .faq {
   padding: 5rem 0;
-  background-color: var(--light-color);
+  background-color: var(--light-beige-color);
 }
 
 .section-title {
@@ -16,7 +16,7 @@
 
 .accordion-item {
   margin-bottom: 1rem;
-  border-radius: 8px;
+  border-radius: 30px;
   overflow: hidden;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

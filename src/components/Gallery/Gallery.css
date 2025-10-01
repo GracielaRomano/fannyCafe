@@ -1,6 +1,6 @@
 .gallery {
   padding: 4rem 0;
-  background-color: #fff;
+  background-color: var(--light-beige-color);
   overflow: hidden;
 }
 

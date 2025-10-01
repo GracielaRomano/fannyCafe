@@ -40,7 +40,7 @@ const FAQ = () => {
               <div className="row justify-content-center mb-5">
                 <div className="col-12 content-head">
                   <div className="section-head">
-                    <h4 className="section-title align-center mb-0">
+                    <h4 className="section-title align-center text-center mb-0">
                       <strong>Preguntas Frecuentes</strong>
                     </h4>
                   </div>

@@ -1,3 +1,4 @@
+/* Slider de galería */
 .gallery07 {
   padding: 2rem 0;
   overflow: hidden;
@@ -14,7 +15,7 @@
   overflow: hidden;
   width: 100%;
   position: relative;
-  height: 220px; /* Altura fija para evitar colapso */
+  height: 220px;
 }
 
 .grid-container-3 {
@@ -23,11 +24,10 @@
   position: absolute;
   left: 0;
   top: 0;
-  /* Transición suave removida para movimiento continuo */
 }
 
 .grid-item {
-  flex: 0 0 290px; /* Ancho fijo para cada item */
+  flex: 0 0 290px;
   padding: 0 1rem;
   box-sizing: border-box;
   transition: transform 0.3s ease;
@@ -41,11 +41,157 @@
   display: block;
 }
 
-/* Efecto hover */
 .grid-item:hover {
   transform: translateY(-5px);
 }
 
+/* Sección de Novedades con Cards */
+.features03 {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.features03 .container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.features03 .mbr-section-head {
+  margin-bottom: 3rem;
+}
+
+.features03 .mbr-section-title {
+  font-size: 2.5rem;
+  color: var(--dark-color);
+  font-weight: 700;
+}
+
+.features03 .item {
+  margin-bottom: 2rem;
+}
+
+.features03 .item-wrapper {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.features03 .item-wrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.features03 .item-img {
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+}
+
+.features03 .item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.features03 .item-wrapper:hover .item-img img {
+  transform: scale(1.1);
+}
+
+.features03 .item-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.features03 .item-title {
+  font-size: 1.4rem;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.features03 .mbr-text {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.features03 .item-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.features03 .btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.features03 .btn-primary {
+  background-color: var(--beige-color);
+  border: none;
+  color: white;
+}
+
+.features03 .btn-primary:hover {
+  background-color: var(--beige-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 204, 0, 0.3);
+}
+
+/* Utilidades */
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.display-2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.display-5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.display-7 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .grid-container {
     height: 170px;
@@ -57,5 +203,25 @@
   
   .grid-item img {
     height: 150px;
+  }
+
+  .features03 {
+    padding: 3rem 0;
+  }
+
+  .features03 .mbr-section-title {
+    font-size: 2rem;
+  }
+
+  .features03 .item-img {
+    height: 200px;
+  }
+
+  .display-2 {
+    font-size: 2rem;
+  }
+
+  .display-5 {
+    font-size: 1.2rem;
   }
 }

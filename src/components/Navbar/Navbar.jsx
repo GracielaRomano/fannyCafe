@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="navbar-brand">
             <span className="navbar-logo">
               <Link to="/">
-                <img src="/src/assets/images/photo-1741245307394-62dcbbea2191.jpeg" alt="CafeCorp Logo" style={{ height: '4.3rem' }} />
+                <img src="/src/assets/images/cafetera.png" alt="CafeCorp Logo" style={{ height: '4.3rem' }} />
               </Link>
             </span>
             <span className="navbar-caption-wrap">

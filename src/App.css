@@ -22,6 +22,9 @@
   --light-color: #f8f9fa;
   --dark-color: #343a40;
   --beige-color: #f6be9b;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --light-beige-color: #f9f3e8;
 }
 
 body {
