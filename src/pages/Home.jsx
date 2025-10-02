@@ -10,6 +10,7 @@ import Plans  from '../components/Plans/Plans';
 import Client from '../components/Client/Client';
 import Video from '../components/Video/Video';
 import About from '../components/About/About';
+import Opinion from '../components/Opinion/Opinion';
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
       <Client />
       <Video />
       <About />
+      <Opinion />
       <Contact />
     </div>
   );
