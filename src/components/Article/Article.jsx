@@ -1,9 +1,9 @@
 import React from 'react'
-import './About.css'
+import './Article.css'
 import aboutImage from '/src/assets/images/photo-1756504919158-006de43be8aa.jpeg'
 
 
-const About = () => {
+const Article = () => {
   return (
     <div>
       <section data-bs-version="5.1" className=" container-about article9 cid-uXQ7jkdYf3" id="about-us-9-uXQ7jkdYf3">
@@ -51,7 +51,7 @@ const About = () => {
                     
                     <p className="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Solicita una cotización personalizada para tu próxima reunión o celebración.</p>
                     <div className="mbr-section-btn">
-                        <a className="btn btn-primary display-7" href="/cotizar">Solicitar Presupuesto</a>
+                        <a className="btn btn-primary display-7" href="/contacto">Solicitar Presupuesto</a>
                     </div>
                 </div>
             </div>
@@ -60,4 +60,4 @@ const About = () => {
     </div>
   )
 }
-export default About
+export default Article

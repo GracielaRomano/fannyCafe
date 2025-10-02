@@ -30,7 +30,7 @@ const Plans = () => {
                                 <p class="mbr-text mbr-fonts-style display-7">Máquina de café para oficinas pequeñas. Incluye mantenimiento y 100 cápsulas.</p>
                             </div>
                             <div class="mbr-section-btn item-footer">
-                                <a href="https://1867610.mobirisesite.com/" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
+                                <a href="/contacto" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const Plans = () => {
                                 <p class="mbr-text mbr-fonts-style display-7">Máquina de café premium para medianas empresas. Mantenimiento y 200 cápsulas incluidas.</p>
                             </div>
                             <div class="mbr-section-btn item-footer">
-                                <a href="https://1867610.mobirisesite.com/" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
+                                <a href="/contacto" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ const Plans = () => {
                                 <p class="mbr-text mbr-fonts-style display-7">Alquiler de máquinas y vajilla para tu evento. Servicio completo.</p>
                             </div>
                             <div class="mbr-section-btn item-footer">
-                                <a href="https://1867610.mobirisesite.com/" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
+                                <a href="/contacto" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@ const Plans = () => {
                                 <p class="mbr-text mbr-fonts-style display-7">Solución completa para grandes corporaciones. Máquinas, cápsulas ilimitadas y soporte VIP.</p>
                             </div>
                             <div class="mbr-section-btn item-footer">
-                                <a href="https://1867610.mobirisesite.com/" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
+                                <a href="/contacto" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
                             </div>
                         </div>
                     </div>

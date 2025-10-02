@@ -3,6 +3,7 @@ import App from '../App';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
+import News from '../pages/News';
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: '/contacto',
         element: <Contact />,
+      },
+      {
+        path: '/novedades',
+        element: <News />,
       },
     ],
   },

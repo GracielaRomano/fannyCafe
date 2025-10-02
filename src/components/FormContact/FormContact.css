@@ -1,6 +1,6 @@
 .form5 {
   padding: 6rem 0;
-  background-color: #f8f9fa;
+  background-color: var(--light-beige-color);
 }
 
 .mbr-section-head {

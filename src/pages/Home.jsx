@@ -4,12 +4,12 @@ import Metrics from '../components/Metrics/Metrics';
 import Gallery from '../components/Gallery/Gallery';
 import FAQ from '../components/FAQ/FAQ';
 import Team from '../components/Team/Team';
-import Contact from '../components/Contact/Contact';
-import News from '../components/News/News';
+import FormContact from '../components/FormContact/FormContact';
+import Recent from '../components/Recent/Recent';
 import Plans  from '../components/Plans/Plans';
 import Client from '../components/Client/Client';
 import Video from '../components/Video/Video';
-import About from '../components/About/About';
+import Article from '../components/Article/Article';
 import Opinion from '../components/Opinion/Opinion';
 import Service from '../components/Service/Service';
 
@@ -21,15 +21,15 @@ const Home = () => {
       <Metrics />
       <Gallery />
       <FAQ />
-      <News />
+      <Recent />
       <Plans />
       <Team />
       <Client />
       <Video />
-      <About />
+      <Article />
       <Opinion />
       <Service />
-      <Contact />
+      <FormContact />
     </div>
   );
 };

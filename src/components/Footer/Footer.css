@@ -1,5 +1,5 @@
 .footer3 {
-  background-color: var(--dark-color);
+  background-color: var(--dark-brown-color);
   padding: 4rem 0 2rem;
   color: white;
 }
@@ -27,7 +27,7 @@
 }
 
 .header-menu-item a:hover {
-  color: var(--primary-color);
+  color: var(--beige-color);
 }
 
 .social-section {
@@ -51,7 +51,8 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +62,7 @@
 }
 
 .social-item:hover {
-  background-color: var(--primary-color);
+  background-color: var(--beige-color);
   transform: translateY(-3px);
   color: white;
 }

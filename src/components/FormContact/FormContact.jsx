@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Contact.css';
+import './FormContact.css';
 
-const Contact = () => {
+const FormContact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -53,8 +53,8 @@ const Contact = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-lg-8 mx-auto mbr-form">
-            <form onSubmit={handleSubmit} className="mbr-form">
+          <div className="col-lg-8 mx-auto ">
+            <form onSubmit={handleSubmit}>
               <div className="row">
                 {formStatus.success && (
                   <div className="alert alert-success col-12">
@@ -110,29 +110,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      <div className="container mt-5">
-        <div className="row">
-          <div className="col-md-3 info-item">
-            <h6><strong>Teléfono</strong></h6>
-            <p><a href="tel:+34 600 123 456">+34 600 123 456</a></p>
-          </div>
-          <div className="col-md-3 info-item">
-            <h6><strong>Email</strong></h6>
-            <p><a href="mailto:info@cafesdelux.es">info@cafesdelux.es</a></p>
-          </div>
-          <div className="col-md-3 info-item">
-            <h6><strong>Dirección</strong></h6>
-            <p>Calle Falsa 123, Ciudad Ejemplo</p>
-          </div>
-          <div className="col-md-3 info-item">
-            <h6><strong>Horario</strong></h6>
-            <p>Lunes a Viernes: 9am - 6pm</p>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
 
-export default Contact;
+export default FormContact;

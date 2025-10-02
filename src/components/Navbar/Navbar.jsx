@@ -58,7 +58,7 @@ const Navbar = () => {
             </ul>
             
             <div className="navbar-buttons mbr-section-btn">
-              <Link to="/presupuesto" className="btn btn-primary display-4">Presupuesto</Link>
+              <Link to="/contacto" className="btn btn-primary display-4">Presupuesto</Link>
             </div>
           </div>
         </div>

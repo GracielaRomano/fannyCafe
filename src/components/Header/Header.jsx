@@ -45,7 +45,7 @@ const Header = () => {
               Soluciones de café premium para tu empresa y eventos.
             </p>
             <div className="mbr-section-btn">
-              <a className="btn btn-white-outline display-7" href="/cotizar">
+              <a className="btn btn-white-outline display-7" href="/contacto">
                 Cotizar
               </a>
             </div>
