@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import './Service.css'
+import './ListService.css'
 
-const Service = () => {
+const ListService = () => {
   const [offset, setOffset] = useState(0);
   const serviceText = "Máquinas Premium * Cápsulas Exclusivas * Mantenimiento Total * Vajilla Sofisticada * Atención Personalizada * Eventos Memorables *";
 
@@ -61,4 +61,4 @@ const Service = () => {
   )
 }
 
-export default Service
+export default ListService

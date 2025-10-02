@@ -11,7 +11,7 @@ import Client from '../components/Client/Client';
 import Video from '../components/Video/Video';
 import Article from '../components/Article/Article';
 import Opinion from '../components/Opinion/Opinion';
-import Service from '../components/Service/Service';
+import ListService from '../components/ListService/ListService';
 
 
 const Home = () => {
@@ -28,7 +28,7 @@ const Home = () => {
       <Video />
       <Article />
       <Opinion />
-      <Service />
+      <ListService />
       <FormContact />
     </div>
   );
