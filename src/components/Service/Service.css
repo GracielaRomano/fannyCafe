@@ -1,0 +1,98 @@
+/* Sección de imagen parallax */
+.image02 {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mbr-fullscreen {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.mbr-parallax-background {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/images/photo-1664035762719-4d6fc28673a3.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.image02 .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Sección de texto deslizante */
+.gallery10 {
+  padding: 2rem 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.loop-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.scrolling-wrapper .item {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0 2rem;
+}
+
+.display-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #232323;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .image02 {
+    min-height: 50vh;
+  }
+
+  .parallax-background {
+    background-attachment: scroll;
+  }
+
+  .display-1 {
+    font-size: 2rem;
+  }
+
+  .scrolling-wrapper .item {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .display-1 {
+    font-size: 1.5rem;
+  }
+}
