@@ -69,18 +69,23 @@ body {
 
 .contact-banner {
   width: 100%;
-  background: linear-gradient(135deg, var(--beige-color) 0%, #e8a87c 100%);
-  padding: 4rem 0;
-  padding-top: calc(4rem + 80px); /* Agregar espacio para el navbar */
+  height:500px;
+  background-image: url('/src/assets/images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background: linear-gradient(135deg, var(--beige-color) 0%, #e8a87c 100%);*/
+  padding: 8rem 0 4rem 0;
+  padding-top: calc(8rem + 80px); /* Agregar espacio para el navbar */
   margin-bottom: 3rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   color: white;
-  margin: 0;
+  margin-bottom: 0px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 

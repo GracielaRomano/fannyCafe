@@ -26,8 +26,7 @@ const ListService = () => {
         <section 
             data-bs-version="5.1" 
             className="image02 cid-uXQ7jkeJfX mbr-fullscreen mbr-parallax-background" 
-            id="image-13-uXQ7jkeJfX"
-        >
+            id="image-13-uXQ7jkeJfX">
             <div className="parallax-background"></div>
             <div className="container">
                 <div className="row"></div>

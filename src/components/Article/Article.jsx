@@ -1,6 +1,6 @@
 import React from 'react'
 import './Article.css'
-import aboutImage from '/src/assets/images/photo-1756504919158-006de43be8aa.jpeg'
+import aboutImage from '/src/assets/images/article.jpg'
 
 
 const Article = () => {

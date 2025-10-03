@@ -4,32 +4,33 @@ import './Header.css';
 const Header = () => {
   return (
     <section className="header18 cid-header mbr-fullscreen">
-      <div className="mbr-background-video-preview" ></div>
+      <div className="mbr-background-video-preview"></div>
       
       <div className="mbr-video-container">
-        <div style={{ background: 'rgb(0, 0, 0)', inset: '0px' }}>
-          <div className="mbr-video-foreground">
-            <iframe
-              className="mbr-background-video"
-              src="https://www.youtube.com/embed/Rmu4mu2V-GQ?autoplay=1&loop=1&playlist=Rmu4mu2V-GQ&t=20&mute=1&playsinline=1&controls=0&showinfo=0&autohide=1&allowfullscreen=true&mode=transparent"
-              frameBorder="0"
-              allowFullScreen
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              style={{
-                marginTop: '0px',
-                maxWidth: 'initial',
-                transitionProperty: 'opacity',
-                transitionDuration: '1000ms',
-                pointerEvents: 'none',
-                position: 'absolute',
-                top: '0px',
-                left: '0px',
-                width: '100%',
-                height: '100%',
-                transform: 'scale(1.2)'
-              }}
-            ></iframe>
-          </div>
+        <div className="mbr-video-foreground">
+          <video
+            className="mbr-background-video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{
+              marginTop: '0px',
+              maxWidth: 'initial',
+              transitionProperty: 'opacity',
+              transitionDuration: '1000ms',
+              pointerEvents: 'none',
+              position: 'absolute',
+              top: '0px',
+              left: '0px',
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              transform: 'scale(1.2)'
+            }}
+          >
+            <source src="/src/assets/videos/Portada.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
 

@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Recent.css';
-import photo1 from '/src/assets/images/photo-1612771377054-cbab1fbb9ad3.jpeg';
-import photo3 from '/src/assets/images/photo-1739991892130-722414cc42b8.jpeg';
-import photo4 from '/src/assets/images/photo-1664035762719-4d6fc28673a3.jpeg';
-import photo2 from '/src/assets/images/photo-1678341611574-f1319b9f0177.jpeg';
+import photo1 from '/src/assets/images/saborNuevo.jpg';
+import photo3 from '/src/assets/images/eventoEstilo.jpg';
+import photo4 from '/src/assets/images/soporte2.jpg';
+import photo2 from '/src/assets/images/maquina2.jpg';
 
 const photos = [
-  '/src/assets/images/photo-1753939440029-e075078bf380.jpeg',
-  '/src/assets/images/photo-1656259699073-8441021e73e1.jpeg',
-  '/src/assets/images/photo-1639117228217-7d1f1a29125f.jpeg',
-  '/src/assets/images/photo-1696020587556-30c08765bcec.jpeg'
+  '/src/assets/images/saborNuevo.jpg',
+  '/src/assets/images/maquina2.jpg',
+  '/src/assets/images/eventoEstilo.jpg',
+  '/src/assets/images/soporte2.jpg'
 ];
 
 const Recent = () => {

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './Gallery.css';
 
 const images = [
-  '/src/assets/images/photo-1674985140588-d40f26c575df.jpeg',
-  '/src/assets/images/photo-1640024280360-7e5a6e6126f0.jpeg',
-  '/src/assets/images/photo-1676976197798-96cbec85e4ef.jpeg',
-  '/src/assets/images/photo-1736601699885-d009d51e3a60.jpeg',
-  '/src/assets/images/photo-1731509950762-2d06baeadb52.jpeg'
+  '/src/assets/images/maquina.jpg',
+  '/src/assets/images/tazas.jpg',
+  '/src/assets/images/capsulas.jpg',
+  '/src/assets/images/taza.jpg',
+  '/src/assets/images/servicio.jpg'
 ];
 
 const Gallery = () => {

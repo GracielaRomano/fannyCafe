@@ -1,16 +1,45 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Client.css'
 
-const images =[
-    '/src/assets/images/photo-1681415851723-dca11d0ec9a6.jpeg',
-    '/src/assets/images/photo-1596622723231-b20320c7346b.jpeg',
-    '/src/assets/images/photo-1529612700005-e35377bf1415.jpeg',
-    '/src/assets/images/photo-1606136968306-ab2868cc1f21.jpeg',
-    '/src/assets/images/photo-1617727553252-65863c156eb0.jpeg',
-    '/src/assets/images/photo-1646825461394-ebd1800141d1.jpeg',
+const images = [
+    '/src/assets/images/sofitel.jpg',
+    '/src/assets/images/tecnopolis.jpg',
+    '/src/assets/images/flow.jpg',
+    '/src/assets/images/expo.jpg',
+    '/src/assets/images/izzi.jpg',
+    '/src/assets/images/edificio.jpg',
+    '/src/assets/images/duble.jpg',
+    '/src/assets/images/fitness.jpg',
+    '/src/assets/images/sutpa.jpg',
 ]
 
 const Client = () => {
+  const [offset, setOffset] = useState(0);
+  const totalImages = images.length;
+  const itemWidth = 200; // Ancho de cada imagen + padding
+
+  // Triplicamos las imágenes para el efecto infinito
+  const extendedImages = [...images, ...images, ...images];
+
+  useEffect(() => {
+    const animate = () => {
+      setOffset(prevOffset => {
+        const newOffset = prevOffset - 1;
+        const totalWidth = totalImages * itemWidth;
+        
+        // Cuando se desplaza el ancho completo de un conjunto, reinicia
+        if (Math.abs(newOffset) >= totalWidth) {
+          return 0;
+        }
+        
+        return newOffset;
+      });
+    };
+
+    const intervalId = setInterval(animate, 30);
+    return () => clearInterval(intervalId);
+  }, [totalImages]);
+
   return (
     <div>
         <section data-bs-version="5.1" className="clients cid-uXQ7jkd45t" id="partners-1-uXQ7jkd45t">
@@ -24,30 +53,34 @@ const Client = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
-                    {images.map((image, index) => (
-                        <div 
-                            key={index} 
-                            className={`item features-image col-12 col-md-6 col-sm-6 col-lg-2 ${index === 0 ? 'active' : ''}`}
-                        >
-                            <div className="item-wrapper">
-                                <div className="item-img">
-                                    <img className='img-client' 
-                                        src={image} 
-                                        alt={`Socio Aliado ${index + 1}`} 
-                                        title="" 
-                                        data-slide-to={index + 1} 
-                                        data-bs-slide-to={index + 1}
-                                    />
+                <div className="clients-container">
+                    <div 
+                        className="clients-wrapper"
+                        style={{
+                            transform: `translateX(${offset}px)`,
+                            willChange: 'transform'
+                        }}
+                    >
+                        {extendedImages.map((image, index) => (
+                            <div key={index} className="client-item">
+                                <div className="item-wrapper">
+                                    <div className="item-img">
+                                        <img 
+                                            className='img-client' 
+                                            src={image} 
+                                            alt={`Socio Aliado ${(index % totalImages) + 1}`}
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
     </div>
   )
 }
+
 export default Client
 
