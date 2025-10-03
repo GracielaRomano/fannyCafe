@@ -13,10 +13,10 @@ const Hero = () => {
           loop
           muted
           playsInline
-          poster="https://img.youtube.com/vi/Rmu4mu2V-GQ/maxresdefault.jpg"
+          poster="/src/assets/images/portada.png"
         >
           <source
-            src="https://www.youtube.com/embed/Rmu4mu2V-GQ"
+            src="/src/assets/videos/Portada.mp4"
             type="video/mp4"
           />
         </video>
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="content-wrap col-12 col-md-12">
-            <h1 className="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+            <h1 className="mbr-section-title mbr-fonts-style mbr-beige mb-4 display-1">
               <strong>Café Excepcional</strong>
             </h1>
             <p className="mbr-fonts-style mbr-text mbr-white mb-4 display-7">

@@ -1,81 +1,84 @@
 .hero {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.video-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.mbr-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.mbr-background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  object-fit: cover;
-}
-
-.content-wrap {
-  position: relative;
-  z-index: 2;
-  padding: 2rem;
-  color: white;
-  text-align: center;
-}
-
-.mbr-section-title {
-  font-size: 4rem;
-  margin-bottom: 2rem;
-}
-
-.mbr-text {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.btn-white-outline {
-  color: white;
-  border: 2px solid white;
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn-white-outline:hover {
-  background-color: white;
-  color: black;
-}
-
-@media (max-width: 768px) {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .mbr-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .mbr-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+  }
+  .mbr-beige {
+    color: var(--beige-color)!important;
+    font-size: 5rem !important;
+  }
+  .content-wrap {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
   .mbr-section-title {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
   }
-
+  
   .mbr-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
-}
+  
+  .btn-white-outline {
+    color: white;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-white-outline:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .mbr-section-title {
+      font-size: 2.5rem;
+    }
+  
+    .mbr-text {
+      font-size: 1.2rem;
+    }
+  }

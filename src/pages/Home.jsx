@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../components/Header/Header';
 import Metrics from '../components/Metrics/Metrics';
 import Gallery from '../components/Gallery/Gallery';
 import FAQ from '../components/FAQ/FAQ';
@@ -12,12 +11,13 @@ import Video from '../components/Video/Video';
 import Article from '../components/Article/Article';
 import Opinion from '../components/Opinion/Opinion';
 import ListService from '../components/ListService/ListService';
+import Header from '../components/Header/Header';
 
 
 const Home = () => {
   return (
     <div className="home-page">
-      <Header />
+      <Header/>
       <Metrics />
       <Gallery />
       <FAQ />
