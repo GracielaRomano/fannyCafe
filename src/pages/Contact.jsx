@@ -29,15 +29,14 @@ const Contact = () => {
             <div className="map-container">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26262.124736662165!2d-58.45412865!3d-34.6353635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9801c92ef47%3A0xc93f0b1dc41d41ee!2sFlores%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1760113005716!5m2!1ses-419!2sar" 
-                //src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.1757444825334!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287fdc8b2be5%3A0x4e0563d017ad4d36!2sPuerta%20del%20Sol!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses"
                 width="100%" 
                 height="600" 
                 style={{ border: 0, borderRadius: '10px' }}
                 allowFullScreen="" 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de nuestra cafetería"
-              ></iframe>
+                title="Ubicación de nuestra cafetería">
+              </iframe>
             </div>
           </div>
         </div>

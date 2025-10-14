@@ -23,7 +23,7 @@ const Plans = () => {
                                     <strong>Básico Café</strong>
                                 </h5>
                                 <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
-                                    <strong>25</strong>/mes
+                                    <strong>Consultar</strong>
                                 </h6>
                             </div>
                             <div class="item-content">
@@ -41,7 +41,7 @@ const Plans = () => {
                                     <strong>Express Negocios</strong>
                                 </h5>
                                 <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
-                                    <strong>45</strong>/mes
+                                    <strong>Consultar</strong>
                                 </h6>
                             </div>
                             <div class="item-content">
@@ -59,7 +59,7 @@ const Plans = () => {
                                     <strong>Total Eventos</strong>
                                 </h5>
                                 <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
-                                    <strong>150</strong>/mes
+                                    <strong>Consultar</strong>
                                 </h6>
                             </div>
                             <div class="item-content">
@@ -77,7 +77,7 @@ const Plans = () => {
                                     <strong>Oro Corporativo</strong>
                                 </h5>
                                 <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
-                                    <strong>75</strong>/mes
+                                    <strong>Consultar</strong>
                                 </h6>
                             </div>
                             <div class="item-content">
