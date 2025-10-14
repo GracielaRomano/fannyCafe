@@ -7,11 +7,11 @@ const metrics = [
     text: 'Cafés Servidos'
   },
   {
-    number: '100',
+    number: '50',
     text: 'Clientes Satisfechos'
   },
   {
-    number: '20',
+    number: '3',
     text: 'Años Experiencia'
   }
 ];

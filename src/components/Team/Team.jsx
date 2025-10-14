@@ -3,23 +3,23 @@ import './Team.css';
 
 const teamMembers = [
   {
-    name: 'Carlos',
-    position: 'Maestro Cafetero',
-    image: '/src/assets/images/photo-1607556114526-058f5efdf49e.jpeg'
+    name: 'Fanny',
+    position: 'Fundadora',
+    image: '/src/assets/images/fanny3.jpg'
   },
   {
-    name: 'Sofía',
+    name: 'Araceli',
     position: 'Logística Élite',
-    image: '/src/assets/images/photo-1615065591984-6800446436a1.jpeg'
+    image: '/src/assets/images/araceli.jpg'
   },
   {
     name: 'Mateo',
-    position: 'Gerente de Cuentas',
+    position: 'Tecnico',
     image: '/src/assets/images/photo-1564564244660-5d73c057f2d2.jpeg'
   },
   {
     name: 'Valentina',
-    position: 'Innovación en Sabores',
+    position: 'Asistente de Eventos',
     image: '/src/assets/images/photo-1578161456171-a346107c3dcf.jpeg'
   }
 ];
