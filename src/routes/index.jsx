@@ -5,6 +5,8 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import News from '../pages/News';
 import Service from '../pages/Service';
+import Events from '../pages/Events';
+import EventDetail from '../pages/EventDetail';
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ export const router = createBrowserRouter([
       {
         path: '/nosotros',
         element: <About />,
+      },
+      {
+        path: '/eventos',
+        element: <Events />,
+      },
+      {
+        path: '/eventos/:id',
+        element: <EventDetail />,
       },
       {
         path: '/contacto',
