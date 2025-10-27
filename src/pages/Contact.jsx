@@ -5,19 +5,11 @@ import '../App.css';
 const Contact = () => {
   return (
     <div className="contact-page">
-      <div className="contact-banner">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 ">
-              <h1 className="contact-title">Contacto</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+      <div className="contact-banner"></div>
       <div className="container">
         <div className="row mb-5">
           <div className="col-12 text-center">
+            <h2 className="events-section-title">Contacto</h2>
             <p className="contact-description">Aquí puedes contactar con nosotros. Estamos disponibles para responder tus consultas y brindarte el mejor servicio.</p>
           </div>
         </div>

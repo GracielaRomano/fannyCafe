@@ -15,8 +15,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div>
-        <h2 className="about-subtitle">Sobre Nosotros</h2>
+      <div className='col-12 text-center'>
+        <h2 className="events-section-title">Sobre Nosotros</h2>
       </div>
       <section className="about-content">
         <div className="container">

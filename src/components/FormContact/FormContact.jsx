@@ -47,7 +47,7 @@ const FormContact = () => {
           <div className="col-12 content-head">
             <div className="mbr-section-head mb-5">
               <h3 className="mbr-section-title align-center mb-0">
-                <strong>Contáctanos</strong>
+                <strong>Dejanos tu consulta</strong>
               </h3>
             </div>
           </div>
