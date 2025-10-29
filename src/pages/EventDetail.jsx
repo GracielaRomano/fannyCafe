@@ -334,7 +334,7 @@ const EventDetail = () => {
       {/* Banner con imagen del evento */}
       <div 
         className="event-detail-banner"
-        // style={{ backgroundImage: `url(${getImagePath(event.banner_image)})` }}
+        style={{ backgroundImage: `url(${getImagePath(event.banner_image)})` }}
       >
         <div className="event-detail-banner-overlay">
           <div className="container">
@@ -437,10 +437,10 @@ const EventDetail = () => {
             <div className="row mb-5">
               <div className="col-12">
                 <div className="event-detail-testimonial">
-                  <i className="fa fa-quote-left event-detail-quote-icon"></i>
+                  <i className="fas fa-quote-left event-detail-quote-icon"></i>
                     <p className="event-detail-testimonial-text">
                       {event.testimonial.text}
-                    <span><i class="fa-solid fa-quote-right event-detail-quote-icon-right"></i></span></p>
+                    <span><i className="fas fa-quote-right event-detail-quote-icon-right"></i></span></p>
                   <div className="event-detail-testimonial-author">
                     <strong>{event.testimonial.author}</strong>
                     <span>{event.testimonial.position}</span>

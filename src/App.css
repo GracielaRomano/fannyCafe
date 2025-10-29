@@ -866,7 +866,7 @@ body {
 .event-detail-banner {
   width: 100%;
   height: 500px;
-  background-image: url('/src/assets/images/caratula.jpg');
+  /* background-image: url('/src/assets/images/laRural/caratula.jpg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
