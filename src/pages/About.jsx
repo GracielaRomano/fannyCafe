@@ -62,7 +62,7 @@ const About = () => {
             </div>
             <div className="col-12 col-lg-6 order-lg-2 events-image-container">
               <div className="events-image-wrapper">
-                <img src={eventsImage} alt="Eventos de Fanny's Cafe" className="events-image" />
+                <img src={eventsImage} alt="Eventos de Aroma a Café" className="events-image" />
               </div>
             </div>
             <div className="col-12 col-lg-6 order-lg-1 events-text-container">

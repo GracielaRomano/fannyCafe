@@ -26,7 +26,7 @@ const Navbar = () => {
               </Link>
             </span>
             <span className="navbar-caption-wrap">
-              <Link to="/" className="navbar-caption text-black display-4">Fanny's Cafe</Link>
+              <Link to="/" className="navbar-caption text-brown display-4">Aroma a Cafe</Link>
             </span>
           </div>
           

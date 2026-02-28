@@ -62,7 +62,7 @@
 }
 
 .social-item:hover {
-  background-color: var(--beige-color);
+  background-color: var(--light-brown-color);
   transform: translateY(-3px);
   color: white;
 }

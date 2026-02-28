@@ -125,12 +125,13 @@
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500 !important;
   padding: 0.5rem 0;
 }
 
 .nav-link:hover {
-  color: var(--primary-color) !important;
+  font-weight: 700 !important;
+  text-decoration: underline var(--light-brown-color) 1px solid!important;
 }
 
 .navbar-buttons {
@@ -139,7 +140,7 @@
 
 .btn-primary {
   color: #ffffff;
-  background-color: var(--beige-color) !important;
+  background-color: var(--light-brown-color) !important;
   border: none;
   padding: 0.7rem 2rem;
   border-radius: 2rem;
@@ -151,13 +152,28 @@
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: var(--brown-color)!important;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .opacityScroll {
   transition: opacity 0.3s ease;
+}
+.text-brown {
+  color: var(--brown-color)!important;
+}
+.text-brown:hover {
+  color: var(--light-brown-color)!important;
+}
+.text-brown:active {
+  color: var(--brown-color)!important;
+}
+.text-brown:focus {
+  color: var(--brown-color)!important;
+}
+.text-brown:visited {
+  color: var(--brown-color)!important;
 }
 
 @media (max-width: 991px) {

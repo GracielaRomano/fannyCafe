@@ -46,7 +46,7 @@ const Footer = () => {
 
           <div className="col-12 mt-4">
             <p className="copyright">
-              © {new Date().getFullYear()} Fanny's Café. Todos los derechos reservados.
+              © {new Date().getFullYear()} Aroma a Café. Todos los derechos reservados.
             </p>
           </div>
         </div>

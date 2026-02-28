@@ -14,8 +14,17 @@ const Contact = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 col-lg-6">
-            <FormContact />
+          <div className="col-12 col-lg-6 space-contact">
+            <div className="info-item">
+                <p><i class="fa-brands fa-whatsapp icon-contact"></i><a href="https://wa.me/5491169712837" target="_blank" className="text-black">1169712837</a></p>
+              </div>
+              <div className="info-item">
+                <p><i class="fa-regular fa-envelope icon-contact"></i><a href="mailto:Fannygomez.fg15@gmail.com" className="text-black">Fannygomez.fg15@gmail.com</a></p>
+              </div>
+              <div className="info-item">
+                <p><i class="fa-regular fa-calendar icon-contact"></i><span className="text-black">Lunes a Viernes: 9am - 5pm</span></p>
+              </div>
+            {/* <FormContact /> */}
           </div>
           <div className="col-12 col-lg-6">
             <div className="map-container">
@@ -32,8 +41,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="container mt-5">
+        <div className="space-contact">
+          {/* <div className="container mt-5">
             <div className="row">
               <div className="col-md-3 info-item">
                 <h6><strong>Teléfono</strong></h6>
@@ -52,7 +61,7 @@ const Contact = () => {
                 <p>Lunes a Viernes: 9am - 5pm</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -29,7 +29,6 @@ const Home = () => {
       <Article />
       <Opinion />
       <ListService />
-      <FormContact />
     </div>
   );
 };
