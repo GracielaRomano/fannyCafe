@@ -26,16 +26,13 @@ const Plans = () => {
                                     <strong>$280.000</strong>
                                 </h6>
                             </div>
-                            <div class="item-content">
-                                <h6 className='mb-3'>
-                                    <strong>Incluye</strong>
-                                </h6>
-                                <p class="mbr-text mbr-fonts-style display-7">
-                                    Máquina de café<br />
-                                    100 cápsulas de café <br />
-                                    Leche <br />
-                                    Vajilla<br />
-                                    3 horas de servicio (Zona Capital)<br /> 
+                            <div className="item-content">
+                                <p className='mbr-text mbr-fonts-style display-7 '>
+                                    <i className="fa-regular fa-circle-check icon-check"></i>Máquina de café<br />
+                                    <i className="fa-regular fa-circle-check icon-check"></i>100 cápsulas de café <br />
+                                    <i className="fa-regular fa-circle-check icon-check"></i>Leche <br />
+                                    <i className="fa-regular fa-circle-check icon-check"></i>Vajilla<br />
+                                    <i className="fa-regular fa-circle-check icon-check"></i>3 horas de servicio (Zona Capital)<br /> 
                                 </p>
                             </div>
                             <div class="mbr-section-btn item-footer">
@@ -53,8 +50,13 @@ const Plans = () => {
                                     <strong>Consultar</strong>
                                 </h6>
                             </div>
-                            <div class="item-content">
-                                <p class="mbr-text mbr-fonts-style display-7">Incluye máquina de café de una boca, 200 cápsulas de café, leche, vajilla y 3 horas de servicio (Zona Capital).</p>
+                            <div className="item-content">
+                                <p className="mbr-text mbr-fonts-style display-7">
+                                    <i className="fa-regular fa-circle-check icon-check"></i>Máquina de café<br />
+                                    <i className="fa-regular fa-circle-check icon-check"></i>200 cápsulas de café <br />
+                                    <i className="fa-regular fa-circle-check icon-check"></i>Leche <br />
+                                    <i className="fa-regular fa-circle-check icon-check"></i>Vajilla<br />
+                                    <i className="fa-regular fa-circle-check icon-check"></i>3 horas de servicio (Zona Capital)<br /> .</p>
                             </div>
                             <div class="mbr-section-btn item-footer">
                                 <a href="/contacto" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
@@ -73,7 +75,11 @@ const Plans = () => {
                                 </h6>
                             </div>
                             <div class="item-content">
-                                <p class="mbr-text mbr-fonts-style display-7">Alquiler de máquinas y vajilla para tu evento. Servicio completo.</p>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                <i className="fa-regular fa-circle-check icon-check"></i>Alquiler de máquinas
+                                  <br />
+                                  <i className="fa-regular fa-circle-check icon-check"></i>Vajilla para tu evento.<br />
+                                 <i className="fa-regular fa-circle-check icon-check"></i>Servicio completo.</p>
                             </div>
                             <div class="mbr-section-btn item-footer">
                                 <a href="/contacto" class="btn item-btn btn-primary display-7">Contratar Ahora</a>
@@ -91,7 +97,11 @@ const Plans = () => {
                                 </h6>
                             </div>
                             <div class="item-content">
-                                <p class="mbr-text mbr-fonts-style display-7">Máquina de café premium para tu empresa. Mantenimiento y cápsulas incluidas.</p>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                <i className="fa-regular fa-circle-check icon-check"></i>Máquina de café premium para tu empresa. <br />
+                                <i className="fa-regular fa-circle-check icon-check"></i>Mantenimiento 
+                                 <br />
+                                 <i className="fa-regular fa-circle-check icon-check"></i>Cápsulas incluidas.</p>
                             </div>
                             <div class="mbr-section-btn item-footer">
                                 <a href="/contacto" class="btn item-btn btn-primary display-7">Contratar Ahora</a>

@@ -5,3 +5,7 @@
     padding-left: 3rem;
     width: 90%;
 }
+.icon-check{
+    color: var(--light-brown-color);
+    margin-right: 10px;
+}
