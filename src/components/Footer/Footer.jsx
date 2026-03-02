@@ -49,6 +49,17 @@ const Footer = () => {
               © {new Date().getFullYear()} Aroma a Café. Todos los derechos reservados.
             </p>
           </div>
+
+          {/* Botón flotante de WhatsApp */}
+          <a
+            href="https://wa.me/5491158659887"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-float"
+            aria-label="Contactar por WhatsApp"
+          >
+            <i className="fab fa-whatsapp" />
+          </a>
         </div>
       </div>
     </footer>

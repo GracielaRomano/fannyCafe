@@ -16,10 +16,10 @@ const Contact = () => {
         <div className="row">
           <div className="col-12 col-lg-6 space-contact text-left">
             <div className="info-item ">
-                <p><i class="fa-brands fa-whatsapp icon-contact text-left"></i><a href="https://wa.me/5491169712837" target="_blank" className="text-black">1169712837</a></p>
+                <p><i class="fa-brands fa-whatsapp icon-contact text-left"></i><a href="https://wa.me/5491158659887" target="_blank" className="text-black">1158659887</a></p>
               </div>
               <div className="info-item">
-                <p><i class="fa-regular fa-envelope icon-contact text-left"></i><a href="mailto:Fannygomez.fg15@gmail.com" className="text-black">Fannygomez.fg15@gmail.com</a></p>
+                <p><i class="fa-regular fa-envelope icon-contact text-left"></i><a href="mailto:aroma.acafe2@gmail.com" className="text-black">aroma.acafe2@gmail.com</a></p>
               </div>
               <div className="info-item">
                 <p><i class="fa-regular fa-calendar icon-contact text-left"></i><span className="text-black">Lunes a Viernes: 9am - 5pm</span></p>
