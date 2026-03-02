@@ -20,7 +20,7 @@ const Article = () => {
                       <div className="text-about">
                         <p className="mbr-text mbr-fonts-style display-7">
                           {/* Somos apasionados por el café y nos dedicamos a llevar experiencias cafeteras excepcionales a tu empresa o evento. Desde 2010, hemos estado sirviendo a compañías como TechSolutions y Eventos Brillantes, proporcionando no solo máquinas de café de vanguardia, sino también un servicio integral que incluye mantenimiento y suministro de las mejores cápsulas. */}
-                          Hace tres años, Fanny decidió transformar su pasión por el café en una experiencia para compartir.<br />
+                          En el año 2022, Fanny decidió transformar su pasión por el café en una experiencia para compartir.<br />
                           Así nació nuestro emprendimiento: un servicio de alquiler de máquinas de café para empresas y eventos, pensado para convertir cada encuentro en un momento especial.
                         </p>
                       </div>

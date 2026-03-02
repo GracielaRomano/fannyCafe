@@ -86,10 +86,10 @@ const Recent = () => {
              <h5 className="item-title mbr-fonts-style mt-0 mb-2 display-5">
                <strong>Nuevo Sabor Intenso</strong>
              </h5>
-             <p className="mbr-text mbr-fonts-style mb-3 display-7">2025-09-20</p>
+             <p className="mbr-text mbr-fonts-style mb-3 display-7"></p>
              <p className="mbr-text mbr-fonts-style mb-3 display-7">Prueba nuestra nueva cápsula 'Fuerza Matutina'. Una explosión de energía.</p>
              <div className="mbr-section-btn item-footer">
-               <a href="/novedades" className="btn item-btn btn-primary display-7">Ver</a>
+               {/* <a href="/novedades" className="btn item-btn btn-primary display-7">Ver</a> */}
              </div>
            </div>
          </div>
@@ -103,10 +103,10 @@ const Recent = () => {
              <h5 className="item-title mbr-fonts-style mb-2 mt-0 display-5">
                <strong>Máquinas en Demanda</strong>
              </h5>
-             <p className="mbr-text mbr-fonts-style mb-3 display-7">2025-09-18</p>
+             <p className="mbr-text mbr-fonts-style mb-3 display-7"></p>
              <p className="mbr-text mbr-fonts-style mb-3 display-7">Alquila nuestras máquinas de última generación para tu oficina. Mantenimiento incluido.</p>
              <div className="mbr-section-btn item-footer">
-               <a href="/novedades" className="btn item-btn btn-primary display-7">Ver</a>
+               {/* <a href="/novedades" className="btn item-btn btn-primary display-7">Ver</a> */}
              </div>
            </div>
          </div>
@@ -120,10 +120,10 @@ const Recent = () => {
              <h5 className="item-title mbr-fonts-style mb-2 mt-0 display-5">
                <strong>Eventos con Estilo</strong>
              </h5>
-             <p className="mbr-text mbr-fonts-style mb-3 display-7">2025-09-15</p>
+             <p className="mbr-text mbr-fonts-style mb-3 display-7"></p>
              <p className="mbr-text mbr-fonts-style mb-3 display-7">Sorprende a tus invitados con un servicio de café inolvidable. Alquiler de máquinas y vajilla.</p>
              <div className="mbr-section-btn item-footer">
-               <a href="/novedades" className="btn item-btn btn-primary display-7">Ver</a>
+               {/* <a href="/novedades" className="btn item-btn btn-primary display-7">Ver</a> */}
              </div>
            </div>
          </div>
@@ -137,10 +137,10 @@ const Recent = () => {
              <h5 className="item-title mbr-fonts-style mb-2 mt-0 display-5">
                <strong>Soporte Constante</strong>
              </h5>
-             <p className="mbr-text mbr-fonts-style mb-3 display-7">2025-09-10</p>
+             <p className="mbr-text mbr-fonts-style mb-3 display-7"></p>
              <p className="mbr-text mbr-fonts-style mb-3 display-7">Nuestro equipo técnico asegura el óptimo funcionamiento de tu máquina de café.</p>
              <div className="mbr-section-btn item-footer">
-               <a href="/novedades" className="btn item-btn btn-primary display-7">Ver</a>
+               {/* <a href="/novedades" className="btn item-btn btn-primary display-7">Ver</a> */}  
              </div>
            </div>
          </div>

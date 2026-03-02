@@ -35,7 +35,7 @@ const About = () => {
                   compañías líderes, proporcionando no solo máquinas de café de vanguardia, 
                   sino también un servicio integral que incluye mantenimiento y suministro de 
                   las mejores cápsulas. */}
-                  Hace tres años, Fanny —una amante del café y de los buenos momentos compartidos— decidió transformar su pasión en un proyecto con propósito.<br />
+                  En el año 2022, Fanny —una amante del café y de los buenos momentos compartidos— decidió transformar su pasión en un proyecto con propósito.<br />
                   Un día, mientras organizaba un evento corporativo, se dio cuenta de algo: el café era mucho más que una bebida. Era una experiencia que podía transformar reuniones en momentos memorables.<br />
                   Así nació su emprendimiento: una propuesta que lleva máquinas de café profesionales a empresas y eventos, para que cada pausa tenga el sabor de lo auténtico.
                 </p>
@@ -80,7 +80,7 @@ const About = () => {
                   asegurando que tus invitados disfruten del mejor café.
                 </p>
                 <div className="events-button-container">
-                  <Link to="/eventos" className="btn-events">
+                  <Link to="" className="btn-events">
                     Ver Nuestros Eventos
                   </Link>
                 </div>

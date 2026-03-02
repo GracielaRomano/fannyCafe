@@ -20,7 +20,7 @@ const faqData = [
   },
   {
     question: '¿Qué tipos de vajilla ofrecen?',
-    answer: 'Contamos con una amplia gama de vajillas elegantes y funcionales, perfectas para complementar cualquier tipo de evento, desde reuniones corporativas hasta celebraciones sociales.'
+    answer: 'Contamos con elegantes vajillas Nespresso, perfectas para complementar cualquier tipo de evento, desde reuniones corporativas hasta celebraciones sociales.'
   }
 ];
 

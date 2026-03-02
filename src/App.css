@@ -132,7 +132,10 @@ body {
   line-height: 1.7;
   padding: 0 1rem;
 }
-
+.text-left {
+  text-align: left;
+  margin-left: 0 !important;
+}
 .map-container {
   background: white;
   padding: 1rem;

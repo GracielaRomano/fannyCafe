@@ -13,7 +13,7 @@ const Footer = () => {
                 <Link to="/" className="text-white">Inicio</Link>
               </li>
               <li className="header-menu-item">
-                <Link to="/servicios" className="text-white">Servicios</Link>
+                <Link to="/" className="text-white">Eventos</Link>
               </li>
               <li className="header-menu-item">
                 <Link to="/nosotros" className="text-white">Nosotros</Link>
