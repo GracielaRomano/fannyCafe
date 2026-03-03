@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 col-lg-4 ">
-            <img src="/src/assets/images/icon/aroma-a-cafe-logo2.1.png" alt="CafeCorp Logo" className="footer-logo" />
+            <img src="/src/assets/images/icon/aroma-a-cafe-logo-blanco.png" alt="CafeCorp Logo" className="footer-logo" />
           </div>
           <div className="col-12 col-md-6 col-lg-4 ">
             <div className="row-links">
