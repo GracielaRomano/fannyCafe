@@ -77,6 +77,11 @@
   margin: 0;
   font-size: 0.9rem;
 }
+.footer-logo {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
 
 /* Botón flotante de WhatsApp */
 .whatsapp-float {
@@ -134,5 +139,10 @@
   .social-item {
     width: 35px;
     height: 35px;
+  }
+  .footer-logo {
+    width: 150px;
+    height: 75px;
+    text-align: center;
   }
 }

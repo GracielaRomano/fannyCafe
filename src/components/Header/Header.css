@@ -124,7 +124,7 @@
 
 @media (max-width: 768px) {
   .display-1 {
-    font-size: 3rem;
+    font-size: 2rem !important;
   }
 
   .display-7 {
