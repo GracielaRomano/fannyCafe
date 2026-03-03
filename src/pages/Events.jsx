@@ -15,7 +15,7 @@ const Events = () => {
         const data = await eventService.getAllEvents();
         setEvents(data);
       } catch (err) {
-        setError(err.message);
+        setError("Disculpe....en este momento no se pueden mostrar los eventos");
         console.error('Error loading events:', err);
       } finally {
         setLoading(false);
