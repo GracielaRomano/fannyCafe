@@ -132,6 +132,15 @@ body {
   line-height: 1.7;
   padding: 0 1rem;
 }
+.contact-page .info-item {
+  text-align: left;
+}
+.contact-page .info-item p {
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  margin-left: 10px !important;
+}
 .text-left {
   text-align: left;
   margin-left: 0 !important;
@@ -775,7 +784,7 @@ body {
   color: white;
   font-size: 0.9rem;
   font-weight: 600;
-  background-color: var(--beige-color);
+  background-color: var(--light-brown-color);
   padding: 0.4rem 1rem;
   border-radius: 20px;
 }
@@ -810,7 +819,7 @@ body {
   font-size: 0.95rem;
   font-weight: 600;
   color: white;
-  background: linear-gradient(135deg, var(--beige-color) 0%, #e8a87c 100%);
+  background: linear-gradient(135deg, var(--light-brown-color) 0%, #e8a87c 100%);
   border: none;
   border-radius: 25px;
   text-decoration: none;
@@ -966,7 +975,7 @@ body {
 
 .event-detail-banner-subtitle {
   font-size: 1.5rem;
-  color: var(--beige-color);
+  color: var(--light-brown-color);
   margin: 0;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
@@ -999,7 +1008,7 @@ body {
   left: 0;
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, var(--beige-color), #e8a87c);
+  background: linear-gradient(90deg, var(--light-brown-color), #e8a87c);
   border-radius: 2px;
 }
 
@@ -1048,7 +1057,7 @@ body {
 
 .event-detail-item i {
   font-size: 1.5rem;
-  color: var(--beige-color);
+  color: var(--light-brown-color);
   margin-top: 0.2rem;
   min-width: 24px;
 }
@@ -1088,12 +1097,12 @@ body {
 }
 
 .event-detail-service-item:hover {
-  background-color: var(--light-beige-color);
+  background-color: var(--beige-color);
   transform: translateX(5px);
 }
 
 .event-detail-service-item i {
-  color: var(--beige-color);
+  color: var(--light-brown-color);
   font-size: 1.3rem;
 }
 
@@ -1134,7 +1143,7 @@ body {
 }
 
 .event-detail-testimonial {
-  background: linear-gradient(135deg, var(--beige-color) 0%, #e8a87c 100%);
+  background: linear-gradient(135deg, var(--light-brown-color) 0%, #e8a87c 100%);
   backdrop-filter: blur(10px);
   padding: 3rem;
   border-radius: 20px;
@@ -1217,7 +1226,7 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   color: white;
-  background: linear-gradient(135deg, var(--beige-color) 0%, #e8a87c 100%);
+  background: linear-gradient(135deg, var(--light-brown-color) 0%, #e8a87c 100%);
   border: none;
   border-radius: 50px;
   text-decoration: none;

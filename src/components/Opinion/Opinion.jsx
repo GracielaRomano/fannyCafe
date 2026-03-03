@@ -30,7 +30,7 @@ const people = [
         name: 'Javier Morales',
         position: 'Cumbre Empresarial',
         image: '/src/assets/images/photo-1535026406642-530e01750ad7.jpeg',
-        testimonial: 'La mejor decisión para nuestro evento corporativo. Café delicioso y atención de primera.'
+        testimonial:  'La mejor decisión para nuestro evento corporativo. Café delicioso y atención de primera.'
     },
     {
         name: 'Elena Soto',

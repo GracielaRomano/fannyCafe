@@ -1,0 +1,13 @@
+/* Ajustes para que los testimonios no se recorten */
+.cid-uXQ7jkepCN .card-text {
+  padding: 0 1rem;
+  display: inline-block;
+  max-width: 100%;
+  text-align: center;
+  overflow: visible;
+}
+
+.cid-uXQ7jkepCN .item-wrapper,
+.cid-uXQ7jkepCN .card-box {
+  overflow: visible;
+}

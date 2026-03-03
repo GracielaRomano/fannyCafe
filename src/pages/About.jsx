@@ -80,7 +80,7 @@ const About = () => {
                   asegurando que tus invitados disfruten del mejor café.
                 </p>
                 <div className="events-button-container">
-                  <Link to="" className="btn-events">
+                  <Link to="/eventos" className="btn-events">
                     Ver Nuestros Eventos
                   </Link>
                 </div>

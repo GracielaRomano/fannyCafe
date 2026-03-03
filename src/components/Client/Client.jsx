@@ -11,6 +11,9 @@ const images = [
     '/src/assets/images/duble.jpg',
     '/src/assets/images/fitness.jpg',
     '/src/assets/images/sutpa.jpg',
+    '/src/assets/images/chocho.jpg',
+    '/src/assets/images/nissan.jpg',
+    	
 ]
 
 const Client = () => {

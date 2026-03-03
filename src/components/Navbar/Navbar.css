@@ -22,8 +22,7 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 1000px;
-  background-color:var(--light-color);
-  opacity: 0.7;
+  background-color: var(--light-color); /* fondo claro casi sólido */
   display: flex;
   flex-wrap:inherit;
   justify-content: space-between;
@@ -46,10 +45,11 @@
 }
 
 .navbar-logo img {
-  height: 6rem;
-  width: 100%;
-  object-fit: contain;
-  transition: all 0.3s ease;
+  height: 4.3rem !important;
+  width: 200px !important;
+  object-fit: contain !important;
+  transition: all 0.3s ease !important;
+  font-size: 1.5rem !important;
 }
 
 .navbar-caption-wrap {

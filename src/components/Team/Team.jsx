@@ -20,7 +20,7 @@ const teamMembers = [
   {
     name: 'Valentina',
     position: 'Asistente de Eventos',
-    image: '/src/assets/images/valentina.png'
+    image: '/src/assets/images/valentina.jpg'
   }
 ];
 

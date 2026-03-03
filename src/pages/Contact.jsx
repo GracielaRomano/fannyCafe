@@ -15,14 +15,27 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-12 col-lg-6 space-contact text-left">
-            <div className="info-item ">
-                <p><i class="fa-brands fa-whatsapp icon-contact text-left"></i><a href="https://wa.me/5491158659887" target="_blank" className="text-black">1158659887</a></p>
+              <div className="info-item">
+                <p>
+                  <i className="fa-brands fa-whatsapp icon-contact text-left"></i>
+                  <a href="https://wa.me/5491158659887" target="_blank" rel="noreferrer" className="text-black">
+                    (54) 11-5865 9887
+                  </a>
+                </p>
               </div>
               <div className="info-item">
-                <p><i class="fa-regular fa-envelope icon-contact text-left"></i><a href="mailto:aroma.acafe2@gmail.com" className="text-black">aroma.acafe2@gmail.com</a></p>
+                <p>
+                  <i className="fa-regular fa-envelope icon-contact text-left"></i>
+                  <a href="mailto:ventas@aromaacafe.com.ar.com" className="text-black">
+                  ventas@aromaacafe.com.ar
+                  </a>
+                </p>
               </div>
               <div className="info-item">
-                <p><i class="fa-regular fa-calendar icon-contact text-left"></i><span className="text-black">Lunes a Viernes: 9am - 5pm</span></p>
+                <p>
+                  <i className="fa-regular fa-calendar icon-contact text-left"></i>
+                  <span className="text-black">Lunes a Viernes: 9am - 5pm</span>
+                </p>
               </div>
             {/* <FormContact /> */}
           </div>

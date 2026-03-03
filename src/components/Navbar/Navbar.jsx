@@ -22,12 +22,12 @@ const Navbar = () => {
           <div className="navbar-brand">
             <span className="navbar-logo">
               <Link to="/">
-                <img src="/src/assets/images/Aroma a cafe 1.png" alt="CafeCorp Logo"  />
+                <img src="/src/assets/images/icon/aroma-a-cafe-logo2.1.png" alt="CafeCorp Logo"  />
               </Link>
             </span>
-            <span className="navbar-caption-wrap">
+            {/* <span className="navbar-caption-wrap">
               <Link to="/" className="navbar-caption text-brown display-4"></Link>
-            </span>
+            </span> */}
           </div>
           
           <button 
