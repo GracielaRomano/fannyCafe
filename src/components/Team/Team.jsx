@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: 'Mateo',
     position: 'Tecnico',
-    image: '/src/assets/images/photo-1564564244660-5d73c057f2d2.jpeg'
+    image: '/src/assets/images/tecnico.png'
   },
   {
     name: 'Valentina',

@@ -33,16 +33,17 @@ const Footer = () => {
                 <strong>Síguenos</strong>
               </h3>
               <div className="social-row">
-                <a href="" target="_blank" rel="noopener noreferrer" className="social-item">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer" className="social-item">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer" className="social-item">
+              <a href="https://www.instagram.com/aromaacafe_catering/" target="_blank" rel="noopener noreferrer" className="social-item">
                   <i className="fab fa-instagram"></i>
                 </a>
                 <a href="" target="_blank" rel="noopener noreferrer" className="social-item">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/search?q=aroma.a.caf0&t=1772901915908" target="_blank" rel="noopener noreferrer" className="social-item">
+                  <i className="fab fa-tiktok"></i>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/aroma-a-cafe/" target="_blank" rel="noopener noreferrer" className="social-item">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
               </div>
