@@ -274,11 +274,28 @@ import { getImagePath, getImageWithFallback, handleImageError } from '../utils/i
 //   }
 // ];
 
+const isDirectVideo = (url = '') => /\.(mp4|webm|ogg)(\?.*)?$/i.test(url);
+
+const toYouTubeEmbed = (url = '') => {
+  // soporta youtu.be/{id} y youtube.com/watch?v={id}
+  const shortMatch = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)/);
+  if (shortMatch) return `https://www.youtube.com/embed/${shortMatch[1]}`;
+
+  const watchMatch = url.match(/[?&]v=([a-zA-Z0-9_-]+)/);
+  if (watchMatch) return `https://www.youtube.com/embed/${watchMatch[1]}`;
+
+  const embedMatch = url.match(/youtube\.com\/embed\/([a-zA-Z0-9_-]+)/);
+  if (embedMatch) return url;
+
+  return null;
+};
+
 const EventDetail = () => {
   const { id } = useParams();
   const [event, setEvent] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  
 
   useEffect(() => {
     const fetchEvent = async () => {
@@ -296,6 +313,20 @@ const EventDetail = () => {
 
     fetchEvent();
   }, [id]);
+
+  const normalizedGallery = Array.isArray(event?.gallery)
+  ? event.gallery.map((item) => {
+      // compatibilidad con backend viejo: gallery como array de strings
+      if (typeof item === 'string') {
+        return { type: 'image', url: item, thumbnail: null };
+      }
+      return {
+        type: item?.type || 'image',
+        url: item?.url || '',
+        thumbnail: item?.thumbnail || null
+      };
+    })
+  : [];
 
   if (loading) {
     return (
@@ -328,7 +359,6 @@ const EventDetail = () => {
       </div>
     );
   }
-
   return (
     <div className="event-detail-page">
       {/* Banner con imagen del evento */}
@@ -419,6 +449,47 @@ const EventDetail = () => {
             <div className="col-12">
               <h2 className="event-detail-section-title">Galería del Evento</h2>
               <div className="event-detail-gallery">
+                {normalizedGallery.map((media, index) => {
+                  const mediaUrl = getImagePath(media.url);
+                  const ytEmbed = media.type === 'video' ? toYouTubeEmbed(media.url) : null;
+
+                  return (
+                    <div key={index} className="event-detail-gallery-item">
+                      {media.type === 'video' ? (
+                        ytEmbed ? (
+                          <iframe
+                            src={ytEmbed}
+                            title={`${event.title} - Video ${index + 1}`}
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        ) : isDirectVideo(media.url) ? (
+                          <video
+                            controls
+                            preload="metadata"
+                            poster={media.thumbnail ? getImagePath(media.thumbnail) : undefined}
+                          >
+                            <source src={mediaUrl} type="video/mp4" />
+                            Tu navegador no soporta video HTML5.
+                          </video>
+                        ) : (
+                          <a href={mediaUrl} target="_blank" rel="noreferrer">
+                            Ver video
+                          </a>
+                        )
+                      ) : (
+                        <img
+                          src={mediaUrl}
+                          alt={`${event.title} - Imagen ${index + 1}`}
+                          onError={(e) => handleImageError(e)}
+                        />
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              {/* <div className="event-detail-gallery">
                 {event.gallery.map((img, index) => (
                   <div key={index} className="event-detail-gallery-item">
                     <img 
@@ -428,7 +499,7 @@ const EventDetail = () => {
                     />
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
 

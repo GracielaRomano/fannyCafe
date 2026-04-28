@@ -15,11 +15,15 @@ export const getImagePath = (imagePath) => {
   if (window.location.hostname === 'localhost' || 
       window.location.hostname === '127.0.0.1' || 
       window.location.port === '5173') {
-    // En desarrollo, usar las imágenes desde src/assets
-    return imagePath.replace('/assets/images/', '/src/assets/images/');
+    // En desarrollo, resolver assets servidos desde /src/assets
+    return imagePath
+      .replace('/assets/images/', '/src/assets/images/')
+      .replace('/assets/videos/', '/src/assets/videos/');
   } else {
     // En producción, usar las imágenes desde la carpeta public/assets
-    return imagePath.replace('/assets/images/', '/assets/images/');
+    return imagePath
+      .replace('/assets/images/', '/assets/images/')
+      .replace('/assets/videos/', '/assets/videos/');
   }
 };
 
