@@ -83,6 +83,9 @@ const Events = () => {
                     src={getImagePath(event.image)} 
                     alt={event.title} 
                     className="event-card-image"
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
                     onError={(e) => handleImageError(e)}
                   />
                   <div className="event-card-overlay">

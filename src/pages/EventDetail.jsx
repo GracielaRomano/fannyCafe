@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { eventService } from '../services/eventService';
-import { getImagePath, getImageWithFallback, handleImageError } from '../utils/imageUtils';
+import { getImagePath, getImageWithFallback, handleImageError, handleDirectVideoError } from '../utils/imageUtils';
 
 // Datos completos de los eventos
 // const eventsDetailData = [
@@ -467,8 +467,11 @@ const EventDetail = () => {
                         ) : isDirectVideo(media.url) ? (
                           <video
                             controls
-                            preload="metadata"
+                            preload="none"
+                            playsInline
+                            loading="lazy"
                             poster={media.thumbnail ? getImagePath(media.thumbnail) : undefined}
+                            onError={handleDirectVideoError}
                           >
                             <source src={mediaUrl} type="video/mp4" />
                             Tu navegador no soporta video HTML5.
@@ -482,6 +485,9 @@ const EventDetail = () => {
                         <img
                           src={mediaUrl}
                           alt={`${event.title} - Imagen ${index + 1}`}
+                          loading="lazy"
+                          decoding="async"
+                          fetchPriority="low"
                           onError={(e) => handleImageError(e)}
                         />
                       )}

@@ -1,41 +1,52 @@
 import React from 'react';
 import './Header.css';
+import { useDeferBackgroundVideo } from '../../hooks/useDeferBackgroundVideo';
+
+const videoStyle = {
+  marginTop: '0px',
+  maxWidth: 'initial',
+  transitionProperty: 'opacity',
+  transitionDuration: '1000ms',
+  pointerEvents: 'none',
+  position: 'absolute',
+  top: '0px',
+  left: '0px',
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+  transform: 'scale(1.2)',
+};
 
 const Header = () => {
+  const { containerRef, showVideo } = useDeferBackgroundVideo();
+
   return (
-    <section className="header18 cid-header mbr-fullscreen">
-      <div className="mbr-background-video-preview"></div>
-      
+    <section
+      ref={containerRef}
+      className="header18 cid-header mbr-fullscreen"
+    >
+      <div className="mbr-background-video-preview" />
+
       <div className="mbr-video-container">
-        <div className="mbr-video-foreground">
-          <video
-            className="mbr-background-video"
-            autoPlay
-            loop
-            muted
-            playsInline
-            style={{
-              marginTop: '0px',
-              maxWidth: 'initial',
-              transitionProperty: 'opacity',
-              transitionDuration: '1000ms',
-              pointerEvents: 'none',
-              position: 'absolute',
-              top: '0px',
-              left: '0px',
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              transform: 'scale(1.2)'
-            }}
-          >
-            <source src="/src/assets/videos/Portada.mp4" type="video/mp4" />
-          </video>
-        </div>
+        {showVideo ? (
+          <div className="mbr-video-foreground">
+            <video
+              className="mbr-background-video"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="none"
+              style={videoStyle}
+            >
+              <source src="/src/assets/videos/Portada.mp4" type="video/mp4" />
+            </video>
+          </div>
+        ) : null}
       </div>
 
-      <div className="mbr-overlay" style={{ opacity: 0.5, backgroundColor: 'rgb(0, 0, 0)' }}></div>
-      
+      <div className="mbr-overlay" style={{ opacity: 0.5, backgroundColor: 'rgb(0, 0, 0)' }} />
+
       <div className="container-fluid">
         <div className="row">
           <div className="content-wrap col-12 col-md-12">

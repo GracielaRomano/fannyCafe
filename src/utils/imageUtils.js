@@ -1,55 +1,79 @@
 // src/utils/imageUtils.js
+// Rutas de media: DB suele guardar /assets/images/... (producción) y en dev Vite sirve desde /src/assets/...
+
+/** Placeholder servido desde `public/assets/` — misma URL en dev y build */
+export const PLACEHOLDER_IMAGE_URL = '/assets/images/placeholder.svg';
+
+const ABSOLUTE_URL = /^https?:\/\//i;
+
+function isAbsoluteOrSpecial(path) {
+  const p = String(path).trim();
+  return (
+    ABSOLUTE_URL.test(p) ||
+    p.startsWith('data:') ||
+    p.startsWith('blob:')
+  );
+}
+
+function rewriteAssetPathForEnv(path) {
+  let out = String(path).trim();
+  if (import.meta.env.DEV) {
+    out = out
+      .replace(/^\/assets\/images\//, '/src/assets/images/')
+      .replace(/^\/assets\/videos\//, '/src/assets/videos/');
+  }
+  return out;
+}
 
 /**
- * Función para obtener la ruta correcta de las imágenes según el entorno
- * @param {string} imagePath - Ruta de la imagen desde la base de datos
- * @returns {string} - Ruta completa de la imagen
+ * Resuelve la URL final para imágenes/videos referenciados por la API o estáticos.
+ * URLs http(s), data: y blob: se devuelven sin cambios.
  */
 export const getImagePath = (imagePath) => {
-  // Si no hay imagen, retornar una imagen placeholder
-  if (!imagePath || imagePath === '') {
-    return '/src/assets/images/placeholder.jpg';
+  if (imagePath === undefined || imagePath === null || String(imagePath).trim() === '') {
+    return PLACEHOLDER_IMAGE_URL;
   }
 
-  // Si estamos en desarrollo (localhost) o usando Vite dev server
-  if (window.location.hostname === 'localhost' || 
-      window.location.hostname === '127.0.0.1' || 
-      window.location.port === '5173') {
-    // En desarrollo, resolver assets servidos desde /src/assets
-    return imagePath
-      .replace('/assets/images/', '/src/assets/images/')
-      .replace('/assets/videos/', '/src/assets/videos/');
-  } else {
-    // En producción, usar las imágenes desde la carpeta public/assets
-    return imagePath
-      .replace('/assets/images/', '/assets/images/')
-      .replace('/assets/videos/', '/assets/videos/');
+  const raw = String(imagePath).trim();
+  if (isAbsoluteOrSpecial(raw)) {
+    return raw;
   }
+
+  if (raw.startsWith('/src/assets/')) {
+    return raw;
+  }
+
+  return rewriteAssetPathForEnv(raw);
 };
 
 /**
- * Función para obtener la ruta de imagen por defecto si no existe
- * @param {string} imagePath - Ruta de la imagen
- * @param {string} fallbackPath - Ruta de imagen por defecto
- * @returns {string} - Ruta de la imagen o fallback
+ * Igual que getImagePath pero permite fallback explícito cuando no hay imagen en DB.
  */
-export const getImageWithFallback = (imagePath, fallbackPath = '/src/assets/images/placeholder.jpg') => {
-  const processedPath = getImagePath(imagePath);
-  
-  // Si no hay imagen, usar fallback
-  if (!imagePath || imagePath === '') {
+export const getImageWithFallback = (imagePath, fallbackPath = PLACEHOLDER_IMAGE_URL) => {
+  if (imagePath === undefined || imagePath === null || String(imagePath).trim() === '') {
     return getImagePath(fallbackPath);
   }
-  
-  return processedPath;
+  return getImagePath(imagePath);
 };
 
 /**
- * Función para manejar errores de carga de imágenes
- * @param {Event} event - Evento de error de la imagen
- * @param {string} fallbackPath - Ruta de imagen por defecto
+ * Error en <img>: evita bucle infinito y usa placeholder público.
  */
-export const handleImageError = (event, fallbackPath = '/src/assets/images/placeholder.jpg') => {
-  event.target.src = getImagePath(fallbackPath);
-  event.target.onerror = null; // Evitar bucle infinito
+export const handleImageError = (event, fallbackPath = PLACEHOLDER_IMAGE_URL) => {
+  const target = event?.target;
+  if (!target || target.tagName !== 'IMG') return;
+  target.onerror = null;
+  target.src = getImagePath(fallbackPath);
+};
+
+/**
+ * Error en <video> (elemento): poster de respuesta y marca para estilos opcionales.
+ */
+export const handleDirectVideoError = (event) => {
+  const video = event?.target;
+  if (!video || video.tagName !== 'VIDEO') return;
+  video.onerror = null;
+  video.classList.add('media-load-error');
+  video.poster = PLACEHOLDER_IMAGE_URL;
+  video.removeAttribute('controls');
 };
